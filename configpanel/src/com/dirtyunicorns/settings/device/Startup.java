@@ -106,9 +106,9 @@ public class Startup extends BroadcastReceiver {
 
             // Disable button settings if needed
             if (!hasButtonProcs()) {
-                disableComponent(context, ButtonSettings.class.getName());
+                disableComponent(context, TouchscreenGestureSettings.class.getName());
             } else {
-                enableComponent(context, ButtonSettings.class.getName());
+                enableComponent(context, TouchscreenGestureSettings.class.getName());
 
                 // Restore nodes to saved preference values
                 for (String pref : Constants.sButtonPrefKeys) {
